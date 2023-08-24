@@ -1,27 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Tienda de Peluches</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos X</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a la Tienda de Peluches</h1>
+        <h1>Tienda de Videojuegos X</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="links.html">Enlaces</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h2>Inicio</h2>
-        <p>Bienvenido a nuestra tienda de peluches. ¡Encuentra el peluche perfecto para ti!</p>
-    </main>
-
-    <script src="script.js"></script>
+    <section class="game-search">
+        <h2>Buscar Juego</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Ingrese el nombre del juego...">
+            <button>Buscar</button>
+        </div>
+        <div class="search-results">
+        </div>
+    </section>
+    <section class="game-categories">
+        <h2>Categorías de Juegos por Género</h2>
+        <div class="category">
+            <img src="https://img.freepik.com/iconos-gratis/espada_318-412465.jpg" alt="Acción" height="100px">
+            <h3>Acción</h3>
+        </div>
+        <div class="category">
+            <img src="https://cdn-icons-png.flaticon.com/512/36/36189.png" alt="Estrategia" height="100px">
+            <h3>Estrategia</h3>
+        </div>
+        <div class="category">
+            <img src="https://cdn.icon-icons.com/icons2/390/PNG/512/treasure-map_38776.png" alt="Aventura" height="100px">
+            <h3>Rol</h3>
+        </div>
+    </section>
+    <section class="featured-games">
+        <h2>Juegos Destacados</h2>
+        <div class="game-container">
+            <div class="game">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Left4Dead2.jpg/220px-Left4Dead2.jpg" alt="l4d2" height="200px">
+                <h3>Left 4 dead 2</h3>
+                <p>Ambientado en el apocalipsis zombi, esta es la esperadísima secuela del...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://static.wikia.nocookie.net/doblaje/images/b/b7/Doom2016cover.png/revision/latest?cb=20200320000157&path-prefix=es" alt="doom" height="200px">
+                <h3>Doom</h3>
+                <p>Doom es un videojuego de acción, de disparos en primera persona desarrollado por...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzEwNDk5NzIxM15BMl5BanBnXkFtZTgwNDA3NzE2MDE@._V1_.jpg" alt="hl2" height="200px">
+                <h3>Half life 2</h3>
+                <p>Half-Life 2 es la continuación del videojuego Half-Life, una videoaventura de disparos en primera...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://s.pacn.ws/1/p/qf/battlefield-1-475957.10.jpg?v=rxo7o1" alt="bf1" height="200px">
+                <h3>Battlefield 1</h3>
+                <p>Battlefield 1 es un videojuego de disparos y acción bélica en primera persona. El título...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="gtav" height="200px">
+                <h3>Grand theft auto 5</h3>
+                <p>Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://cdn.cdkeys.com/700x700/media/catalog/product/t/h/the_elder_scrolls_v_skyrim_special_edition_pc_cover.jpg" alt="skyrim" height="200px">
+                <h3>The Elder Scrolls V: Skyrim</h3>
+                <p>The Elder Scrolls V: Skyrim es un ARPG del tipo mundo abierto desarrollado por...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://static.wikia.nocookie.net/cod/images/a/a0/Car%C3%A1tula_COD_MW2.jpg/revision/latest/thumbnail/width/360/height/360?cb=20100106104939&path-prefix=es" alt="cod2" height="200px">
+                <h3>Call of Duty: Modern Warfare 2</h3>
+                <p>Call of Duty: Modern Warfare 2​​ es un videojuego de acción en primera persona desarrollado por...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://static.tvtropes.org/pmwiki/pub/images/portal_2.jpg" alt="portal2" height="200px">
+                <h3>Portal 2</h3>
+                <p>Portal 2 es el segundo videojuego mezcla de videojuego de lógica y de disparos en primera persona...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Titanfall_2.jpg" alt="titan2" height="200px">
+                <h3>Titanfall 2</h3>
+                <p>Titanfall 2 es un videojuego de acción en primera persona estilo mecha, que ha sido desarrollado...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://smartcdkeys.com/image/data/products/metro-2033/cover/metro-2033-COVER.jpg" alt="metro" height="200px">
+                <h3>Metro 2033</h3>
+                <p>Metro 2033​ es un videojuego de terror que combina elementos de acción y con elementos de...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/02/counter-strike-global-offensive-caratula.jpg?tf=1200x" alt="csgo" height="200px">
+                <h3>Counter-Strike: Global Offensive</h3>
+                <p>Counter-Strike: Global Offensive es un videojuego de disparos en primera persona desarrollado por...</p>
+                <button>Comprar</button>
+            </div>
+            <div class="game">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="minecraft" height="200px">
+                <h3>Minecraft</h3>
+                <p>Minecraft es un videojuego tipo sandbox, su traducción literal sería “caja de arena” y es...</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Tienda de Videojuegos X. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
